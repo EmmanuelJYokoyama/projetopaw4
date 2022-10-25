@@ -1,0 +1,133 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #C2A878;
+}
+
+header{
+    min-width: 200px;
+    min-height: 50px;
+    padding: 20px;
+    background-color: #264e38;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    min-width: 100px;
+    max-width: 1300px;
+    min-height: 450px;
+    margin: auto;
+    background-color: rgba(228, 217, 217, 0.935);
+    border-radius: 0 0 20px 20px;
+    box-shadow: 2px 2px 5px #0000005d;    
+}
+
+
+nav{
+    min-width: 200px;
+    padding: 3px;
+    background-color: #264e38;
+    box-shadow: 3px 5px 6px rgb(110, 110, 110);
+    overflow: hidden;
+}
+#navegador{
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #C2A878;
+   
+}
+#nav{
+    display:  inline-block;
+    padding: 23px;
+    width: 95%;
+    text-align: center;
+    box-sizing: border-box;
+}
+#nav div{
+    display: inline-block;
+}
+#left{
+    float: left;
+   
+}
+#left img{
+    width: 250px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    margin: 12px;
+    transition: linear 100ms;
+}
+nav a:hover{
+    border-bottom: 3px solid white;
+}
+
+#divimg{
+    width: 50px;
+}
+#perfila{
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: linear 100ms;
+}
+#perfila img{
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+}
+#perfila:hover{
+    border-bottom: none;
+    cursor: pointer;
+    filter: brightness(80%);
+}
+@media screen and (max-width: 700px){
+    #nav div, #nav div a{
+        display:  block;
+        margin: auto;      
+    }
+    #nav{
+        margin: auto;
+    }
+    #left{
+        float: none;
+        padding: 10px;
+    }
+    #nav div a{
+        padding: 15px;
+        background-color: #C2A878;
+        margin: 0 -39px 0 -39px;
+        font-size: 1.3em;
+        font-weight: bold;
+        border: 1px solid rgba(0, 0, 0, 0.192);
+        transition: linear 100ms;
+    }
+    #nav a:hover{
+        /*border-bottom: 3px solid white;*/
+        text-decoration: underline;
+        background-color: #2953ac;
+    }
+    #divimg{
+        display: none;
+    }
+}

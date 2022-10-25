@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/criar_log.css">
+    <link rel="stylesheet" href="/style/modal.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastrar</h1>
+    </header>
+    <main>
+            <div><br>
+                <form action="criar_acc.js" method="get" enctype="multipart/form-data" autocomplete="on">
+                    <div>
+                        <label for="inome">Nome</label>
+                        <input type="text" name="nome" id="inome" autocomplete="name">
+                    </div>
+                    <div>
+                        <label for="iemail">E-mail:</label>
+                        <input type="email" name="email" id="iemail" autocomplete="email">
+                    </div>
+                    <div>
+                        <label for="isenha">Senha:</label>
+                        <input type="password" name="senha" id="isenha">
+                    </div>
+                    <div>
+                        <label for="is2">Confirmar senha:</label>
+                        <input type="password" name="s2" id="is2">
+                    </div> 
+                    <div>
+                        <label for="idata">Data de nascimento:</label>
+                        <input type="date" name="data" id="idata">
+                    </div>
+                    <button id="btncriar" type="submit">Criar conta</button>
+                    <a href="index.html" id="contaexistente">Entrar</a>
+                </form><br>
+
+            </div>
+
+    </main>
+    
+    <!-- <script src="scripts/modal.js"></script>
+    <script src="scripts/carregarimg.js"></script> -->
+</body>
+</html>
